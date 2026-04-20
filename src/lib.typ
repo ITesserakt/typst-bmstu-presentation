@@ -1,4 +1,4 @@
-#import "@preview/touying:0.6.1": touying-slide-wrapper
+#import "@preview/touying:0.7.1": touying-slide-wrapper
 
 #let colors = (
   primary: rgb("#006cdc"),
