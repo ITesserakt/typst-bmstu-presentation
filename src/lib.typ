@@ -80,7 +80,7 @@
   line_correction: 0em,
   ..args
 ) = touying-slide-wrapper(self => {
-  import "@preview/touying:0.6.1": touying-slide
+  import "@preview/touying:0.7.1": touying-slide
 
   let exists(what, then) = {
     if what != none { then(what) }
@@ -172,7 +172,7 @@
   1fr,
   text(size: 28pt, weight: "medium", fill: white)[Вопросы?],
 )) = touying-slide-wrapper(self => {
-  import "@preview/touying:0.6.1": touying-slide
+  import "@preview/touying:0.7.1": touying-slide
 
   let body = {
     set page(margin: 0pt)
@@ -197,7 +197,7 @@
   preamble: none,
   body
 ) = {
-  import "@preview/touying:0.6.1": *
+  import "@preview/touying:0.7.1": *
 
   set text(
     size: 15pt,
