@@ -23,7 +23,7 @@
 ), ..args)
 
 #let slide(title, subtitle: none, page_number: true, ..args) = touying-slide-wrapper(self => {
-  import "@preview/touying:0.6.1": touying-slide, utils, config-page, config-common
+  import "@preview/touying:0.7.1": touying-slide, utils, config-page, config-common
 
   let header(self) = layout(size => {
     set align(bottom + left)
