@@ -9,7 +9,7 @@
 #let margin = (left: 1cm, right: 1.3cm, bottom: 2.5cm, top: 7em)
 
 #let shaded(..args, body) = {
-  show math.equation: set text(font: "Noto Sans Math")
+  show math.equation: set text(font: "New Computer Modern Math")
   text(fill: luma(0%, 50%), style: "italic", ..args, body)
 }
 #let block(title, body) = {
