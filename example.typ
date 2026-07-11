@@ -206,7 +206,7 @@ Computer Science. 2008. P. 333–348.].
 #slide("Программная реализация", subtitle: "Пример использования cetz, окружения raw")[
   - Рассмотрим графовую модель $Gamma_3$ (@graph):
     - #shaded[$S_1, S_2, S_3$ - три состояния данных;]
-    - #shaded[$F_(12) = angle.l p_(12), f_(12) angle.r, F_(23) = angle.l p_(23), f_(23) angle.r,$\ $F_(21) = angle.l p_(21), f_(21) angle.r$ - функции перехода;]
+    - #shaded[$F_(12) = chevron.l p_(12), f_(12) chevron.r, F_(23) = chevron.l p_(23), f_(23) chevron.r,$\ $F_(21) = chevron.l p_(21), f_(21) chevron.r$ - функции перехода;]
     - $h: DD -> BB^2$ - функция селектор.
   - Представленной графовой модели соответствует следующее aDOT определение ().
 
@@ -217,7 +217,7 @@ Computer Science. 2008. P. 333–348.].
       node-shape: "circle",
       cell-size: 20mm,
       $
-        node((0, 0), S_1) edge(angle.l p_(12)\; f_(12) angle.r, ->) & node((1, 0), S_2\,h) #edge((1, 0), (0, 0), $angle.l p_(21)\; f_(21) angle.r$, "->", bend: -60deg) edge(angle.l p_(23)\;f_(23) angle.r, ->) & S_3
+        node((0, 0), S_1) edge(chevron.l p_(12)\; f_(12) chevron.r, ->) & node((1, 0), S_2\,h) #edge((1, 0), (0, 0), $chevron.l p_(21)\; f_(21) chevron.r$, "->", bend: -60deg) edge(chevron.l p_(23)\;f_(23) chevron.r, ->) & S_3
       $
     )
   ) <graph>
