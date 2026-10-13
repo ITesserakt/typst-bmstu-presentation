@@ -150,8 +150,6 @@
   ..args,
 ) = touying-slide-wrapper(self => {
   let info = utils.merge-dicts(
-    self.info,
-    args.named(),
     (
       institution: [Московский государственный технический университет имени Н.Э. Баумана],
       title: [\@Название темы, в полной мере раскрывающее замысел...\@],
@@ -163,6 +161,8 @@
         supervisor: (position: [\@должность\@, \@уч.ст.\@], name: [\@Фамилия И.О.\@], position_name: auto),
       ),
     ),
+    self.info,
+    args.named(),
   )
 
   let exists(what, then) = if what != none { then(what) }
