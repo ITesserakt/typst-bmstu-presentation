@@ -139,6 +139,17 @@
     config-store(
       title: none,
     ),
+    config-info(
+      institution: [Московский государственный технический университет имени Н.Э. Баумана],
+      title: [\@Название темы, в полной мере раскрывающее замысел...\@],
+      subtitle: [\@Подробности темы, различные детали, неуместившиеся в названии темы\@],
+      contact: [\@email\@domain\@],
+      extra: (
+        place: (location: [\@место проведения|online\@], country: [Россия], city: [Москва], duration: [10 минут]),
+        speaker: (position: [\@должность\@, \@уч.ст.\@], name: [\@Фамилия И.О.\@], position_name: auto),
+        supervisor: (position: [\@должность\@, \@уч.ст.\@], name: [\@Фамилия И.О.\@], position_name: auto),
+      ),
+    ),
     ..args,
   )
 
@@ -150,17 +161,6 @@
   ..args,
 ) = touying-slide-wrapper(self => {
   let info = utils.merge-dicts(
-    (
-      institution: [Московский государственный технический университет имени Н.Э. Баумана],
-      title: [\@Название темы, в полной мере раскрывающее замысел...\@],
-      subtitle: [\@Подробности темы, различные детали, неуместившиеся в названии темы\@],
-      contact: [\@email\@domain\@],
-      extra: (
-        place: (location: [\@место проведения|online\@], country: [Россия], city: [Москва], duration: [10 минут]),
-        speaker: (position: [\@должность\@, \@уч.ст.\@], name: [\@Фамилия И.О.\@], position_name: auto),
-        supervisor: (position: [\@должность\@, \@уч.ст.\@], name: [\@Фамилия И.О.\@], position_name: auto),
-      ),
-    ),
     self.info,
     args.named(),
   )
